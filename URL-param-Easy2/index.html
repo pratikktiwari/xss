@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vuln XSS 1</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="main_container">
+		<h1>Change Background Color</h1>
+		<input type="text" id="input_box" placeholder="URL Param - name">
+		<p></p>
+		<h2 id="empty_div"></h2>
+		<!-- <p>
+			=====Answer====
+			URL PARAM
+			?name=<img src ='' onerror="document.body.style.backgroundColor='red'"/>
+		</p> -->
+		<p>Answer in page source</p>
+	</div>
+	<script type="text/javascript">
+		const url_string = window.location.href
+		const url = new URL(url_string);
+		const name = url.searchParams.get("name");
+		document.getElementById("empty_div").innerHTML = name
+	</script>
+</body>
+</html>
