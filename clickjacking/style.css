@@ -6,6 +6,7 @@
 body{
 	width: 100%;
 	overflow-x: hidden;
+	position: relative;
 }
 nav{
 	padding: 20px;
@@ -86,7 +87,7 @@ particle {
   top: 0;
 }
 #p_warning{
-	position: absolute;
+	position: fixed;
 	bottom: 10px;
 	right: 20px;
 	font-size: 20px;
