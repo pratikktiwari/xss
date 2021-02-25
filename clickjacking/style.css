@@ -31,10 +31,10 @@ nav{
 	background-size: contain;
 	transform-origin: center;
 
-	animation-name: anim;
-	animation-duration: .5s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	/*animation-name: anim;*/
+	/*animation-duration: .5s;*/
+	/*animation-iteration-count: infinite;*/
+	/*animation-direction: alternate;*/
 	cursor: pointer;
 }
 @keyframes anim{
