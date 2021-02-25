@@ -49,6 +49,7 @@ function createParticle (x, y) {
   };
 }
 document.getElementById("spinner").addEventListener("click",()=>{
+  document.getElementById("spinner").className = "spin spinner_div"
   var count = 5
   window.setInterval(() => {
       if (count < 10) {
@@ -62,6 +63,7 @@ document.getElementById("spinner").addEventListener("click",()=>{
 document.getElementById("button").addEventListener("click",()=>{
   var count = 5
   // const open = url[getRandom()]
+  document.getElementById("spinner").className = "spin spinner_div"
   window.setInterval(() => {
       if (count < 10) {
           window.open(url[getRandom()], "_blank")
@@ -74,6 +76,7 @@ document.getElementById("button").addEventListener("click",()=>{
 document.getElementById("floating_winner").addEventListener("click",()=>{
   var count = 5
   // const open = url[getRandom()]
+  document.getElementById("spinner").className = "spin spinner_div"
   window.setInterval(() => {
       if (count < 10) {
           window.open(url[getRandom()], "_blank")
