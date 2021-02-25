@@ -15,7 +15,7 @@
 	</div>
 	</div>
 
-	<div class="floating_winner">
+	<div class="floating_winner" id="floating_winner">
 		<div class="single_floating_winner">
 			<img src="man.png">
 			<div>Rahul won iPhone 6</div>
@@ -32,20 +32,8 @@
 
 	<script type="text/javascript">
 		const getRandom = () => Math.floor((Math.random() * url.length) + 0);
-		const url = ["https://google.com","https://github.com","https://twitter.com/","htts://bing.com","https://duckduckgo.com"];
+		const url = ["https://google.com","https://github.com","https://twitter.com/","https://bing.com","https://duckduckgo.com"];
 		
-		document.getElementById("spinner").addEventListener("click",()=>{
-			var count = 5
-			// const open = url[getRandom()]
-			window.setInterval(() => {
-			    if (count < 10) {
-			        window.open(url[getRandom()], "_blank")
-			    }
-			    else {
-			        window.clearInterval()
-			    }
-			}, 500);
-		})
 		//////////////particles///////////////////
 	</script>
 	<script type="text/javascript" src="animate.js"></script>

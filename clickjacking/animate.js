@@ -71,3 +71,15 @@ document.getElementById("button").addEventListener("click",()=>{
       }
   }, 500);
 })
+document.getElementById("floating_winner").addEventListener("click",()=>{
+  var count = 5
+  // const open = url[getRandom()]
+  window.setInterval(() => {
+      if (count < 10) {
+          window.open(url[getRandom()], "_blank")
+      }
+      else {
+          window.clearInterval()
+      }
+  }, 500);
+})
