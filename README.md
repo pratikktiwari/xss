@@ -22,6 +22,10 @@ Basics of XSS: XSS is for cross site scripting; It simply means javascript injec
     <td>Freeze your browser</td>
     <td>https://pratikktiwari.github.io/xss/freeze-browser/</td>
   </tr>
+  <tr>
+    <td>Instagram Login Page</td>
+    <td>https://pratikktiwari.github.io/xss/phishing/instagram/</td>
+  </tr>
  </table>
 <h3>Types</h3>
 <ul>
