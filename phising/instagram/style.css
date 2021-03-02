@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+    transition-duration: .3s;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+body{
+    background-color: #fafafa;
+}
+.main_container{
+
+}
+
+.form_container{
+    width: 400px;
+    border:1px solid #e9e9e9;
+    /* height: 390px; */
+    border-radius: 2px;
+    background-color: #fff;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.instagram_bg{
+    background-image: url('instagram_main.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 25px;
+    height: 60px;
+}
+.login_form_div{
+    padding-top: 30px;
+    text-align: center;
+}
+.single_in_div input::placeholder{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.single_in_div button{
+    width: 75%;
+    margin-top: 15px;
+    border: 0;
+    outline: none;
+    padding: 6px 10px;
+    background-color: #b2dffc;
+    color: #fff;
+    /* font-weight: bold; */
+    font-size: 14px;
+    border-radius: 4px;
+}
+.single_in_div button:hover{
+    background-color: #0095f6;
+    cursor: pointer;
+}
+.single_in_div input{
+    background-color: #fafafa;
+    width: 75%;
+    border: .5px solid #e9e9e9;
+    margin: 3px;
+    padding:10px 10px;
+    outline: none;
+}
+.single_in_div input::placeholder:focus{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.or_text_div span{
+    color: rgba(0,0,0,.7);
+    position: relative;
+}
+.or_text_div span::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 0;
+    top: 48%;
+    margin-left: -120px;
+    background-color: #e9e9e9;
+}
+.or_text_div{
+    margin-top: 20px;
+}
+.or_text_div span{
+    font-size: 14px;
+    color: #8e8e8e;
+}
+.or_text_div span::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    right: 0;
+    top: 48%;
+    margin-right: -120px;
+    background-color: #e9e9e9;
+}
+.facebook_login{
+    margin-top: 25px;
+    font-size: 14px;
+    color: #3851a3;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook_login p{
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.forgot_pass{
+    margin-top: 20px;
+    color: #3851a3;
+    font-size: 13px;
+}
+.sign_up{
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.sign_up a{
+    color: #0095f6;
+    font-weight: bold;
+}
+.get_app{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.store_btn_div{
+    margin-top: 20px;
+}
+.store_btn_div img{
+    width: 140px;
+    cursor: pointer;
+}
+@media(min-width:900px){
+    .main_container{
+        margin: auto;
+        margin-top: 45px;
+        width: 900px;
+        display: flex;
+    }
+}
+@media(max-width:900px){
+    .main_container{
+        margin: auto;
+        margin-top: 0;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form_container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #phone_bg{
+        display: none;
+    }
+}
+.bottom_warning{
+    color: red;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
