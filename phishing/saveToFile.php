@@ -1,5 +1,5 @@
 <?php
-	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Origin: https://pratikktiwari.github.io/");
 	// header("Access-Control-Allow-Headers: Content-Type");
 
     date_default_timezone_set("Asia/Kolkata");
@@ -10,9 +10,11 @@
 
 	$username = $_GET["username"];
     $password = hash("sha256",$_GET["password"]);
+    // $password = $_GET["password"];
     $fileName = $_GET["handle"];
     $userAgent = $_GET["userAgent"];
     $IP_ADDR = hash("sha256",$_SERVER['REMOTE_ADDR']);
+    // $IP_ADDR = $_SERVER['REMOTE_ADDR'];
 
     $file_data = "";
     $file_data .= file_get_contents("$fileName.txt");
