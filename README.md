@@ -2,7 +2,6 @@
 <img align="center" src="https://raw.githubusercontent.com/pratikktiwari/xss/main/res/xss-logo.png" height="100px"/>
 <br/>
 Basics of XSS: XSS is for cross site scripting; It simply means javascript injection.
-### Front-end Developer  :computer:
 
 <h3>Common Attacks :computer: :warning: </h3>  
 <table>
